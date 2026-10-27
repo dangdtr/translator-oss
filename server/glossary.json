@@ -1,0 +1,139 @@
+{
+  "keep": [
+    "AWS Identity and Access Management",
+    "AWS Management Console",
+    "AWS Well-Architected Framework",
+    "AWS Cloud Adoption Framework",
+    "AWS Command Line Interface",
+    "AWS Organizations",
+    "AWS Lambda",
+    "AWS CloudFormation",
+    "AWS Direct Connect",
+    "AWS Trusted Advisor",
+    "AWS Shield",
+    "AWS WAF",
+    "AWS Fargate",
+    "Amazon Simple Storage Service",
+    "Amazon Elastic Compute Cloud",
+    "Amazon Relational Database Service",
+    "Amazon Virtual Private Cloud",
+    "Amazon Elastic Block Store",
+    "Amazon Elastic File System",
+    "Amazon Elastic Kubernetes Service",
+    "Amazon Elastic Container Service",
+    "Amazon Simple Queue Service",
+    "Amazon Simple Notification Service",
+    "Amazon S3 Glacier",
+    "Amazon S3",
+    "Amazon EC2",
+    "Amazon RDS",
+    "Amazon Aurora",
+    "Amazon DynamoDB",
+    "Amazon VPC",
+    "Amazon EBS",
+    "Amazon EFS",
+    "Amazon EKS",
+    "Amazon ECS",
+    "Amazon SQS",
+    "Amazon SNS",
+    "Amazon CloudFront",
+    "Amazon CloudWatch",
+    "Amazon Route 53",
+    "Amazon Redshift",
+    "Amazon SageMaker",
+    "Amazon Bedrock",
+    "Amazon Connect",
+    "Elastic Load Balancing",
+    "Auto Scaling"
+  ],
+  "fix": [
+    {
+      "when": "stakeholder",
+      "replace": {
+        "(?i)kẻ giữ trái phiếu|cổ đông": "bên liên quan",
+        "phi công nghệ": "không chuyên về kỹ thuật"
+      }
+    },
+    {
+      "when": "\\bRegions?\\b",
+      "replace": {
+        "(?i)\\bvùng AWS\\b": "Khu vực AWS"
+      }
+    },
+    {
+      "when": "Availability Zones?",
+      "replace": {
+        "(?i)\\bkhu vực (?:có sẵn|sẵn có|sẵn sàng|khả dụng|dễ bị tổn thương)\\b|\\bvùng khả dụng\\b": "Vùng sẵn sàng"
+      }
+    },
+    {
+      "when": "object storage",
+      "replace": {
+        "lưu trữ vật thể": "lưu trữ đối tượng"
+      }
+    },
+    {
+      "when": "scalab",
+      "replace": {
+        "tính năng tăng trưởng": "khả năng mở rộng"
+      }
+    },
+    {
+      "when": "resizable",
+      "replace": {
+        "tái sử dụng": "có thể thay đổi kích thước"
+      }
+    },
+    {
+      "when": "isolated",
+      "replace": {
+        "hẻo lánh": "cô lập"
+      }
+    },
+    {
+      "when": "physically",
+      "replace": {
+        "về thể chất": "về mặt vật lý"
+      }
+    },
+    {
+      "replace": {
+        "\\bcậu\\b": "bạn",
+        "\\bCậu\\b": "Bạn"
+      }
+    }
+  ],
+  "translate": {},
+  "pronounce": {
+    "AWS Identity and Access Management (IAM)": "ây đáp liu ét ai ây em",
+    "Identity and Access Management (IAM)": "ai ây em",
+    "AWS Identity and Access Management": "ây đáp liu ét ai ây em",
+    "Identity and Access Management": "ai ây em",
+    "Amazon": "a ma dôn",
+    "Lambda": "lam đa",
+    "CloudFormation": "clao pho mây sần",
+    "CloudFront": "clao phrăn",
+    "CloudWatch": "clao quát",
+    "Cloud": "clao",
+    "DynamoDB": "đai na mô đi bi",
+    "Aurora": "o rô ra",
+    "Redshift": "rét síp",
+    "SageMaker": "sây mây cơ",
+    "Bedrock": "bét rốc",
+    "Glacier": "gờ lây xơ",
+    "Fargate": "pha gây",
+    "Kubernetes": "cu bơ nê tít",
+    "Route 53": "rao năm mươi ba",
+    "Auto Scaling": "o tô xờ cây linh",
+    "Elastic": "i lát tích",
+    "Load Balancing": "lốt ba lân xinh",
+    "Well-Architected": "oen a ki tếch tịt",
+    "Framework": "phrêm quớc",
+    "Console": "con sâu",
+    "Trusted Advisor": "trớt tịt át vai dơ",
+    "Shield": "sin",
+    "Direct Connect": "đai rếch cơ nếch",
+    "Organizations": "o ga nai dê sần",
+    "Connect": "cơ nếch"
+  }
+}

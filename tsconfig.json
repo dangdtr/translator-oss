@@ -1,0 +1,23 @@
+{
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "types": ["chrome", "node"]
+  },
+  "include": [
+    "src/**/*",
+    "src-gemini/**/*",
+    "tests/**/*",
+    "./.wxt/types/**/*"
+  ]
+}

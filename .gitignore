@@ -1,0 +1,15 @@
+.venv/
+.venv-vieneu/
+models/
+.cache/
+__pycache__/
+.pytest_cache/
+node_modules/
+test-results/
+*.log
+extension/local-config.js
+public/local-config.js
+extension/local-config.json
+public/local-config.json
+.wxt/
+samples/

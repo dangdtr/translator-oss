@@ -1,0 +1,39 @@
+{
+  "name": "translator",
+  "version": "0.4.0",
+  "description": "Chrome extension for bilingual translation, YouTube subtitles & AI dubbing using free Gemini Live API or offline local AI (VietAI & VieNeu-TTS).",
+  "license": "(MIT AND GPL-3.0-or-later)",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build && rm -rf extension/chunks extension/assets && cp -rf .output/chrome-mv3/* extension/",
+    "zip": "wxt zip",
+    "build:gemini": "node scripts/gemini-build.mjs build",
+    "zip:gemini": "node scripts/gemini-build.mjs zip",
+    "verify:gemini": "node scripts/verify-gemini-artifact.mjs .output/gemini/chrome-mv3",
+    "test:gemini-browser": "npm run build:gemini && node tests/gemini-browser.cjs && node tests/gemini-capture.cjs",
+    "test:gemini-capture": "npm run build:gemini && node tests/gemini-capture.cjs",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:unit": "tsx --test tests/*.test.ts",
+    "test:browser": "node tests/browser.cjs",
+    "test:audio": "node tests/audio.cjs",
+    "test:live-video": "wxt build && node tests/live-video.cjs",
+    "test:segmented-video": "wxt build && node tests/segmented-video.cjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "playwright": "^1.58.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.2",
+    "video.js": "^8.24.1",
+    "wxt": "^0.20.27"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

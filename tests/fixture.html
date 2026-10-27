@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Local Translator test</title>
+<style>body{max-width:800px;margin:40px auto;font:20px system-ui}video{width:640px;height:360px;background:#24324a}</style>
+<h1>Welcome to your local translator</h1><p>This is a simple test. The translation runs on your computer.</p>
+<video id="video" controls muted></video><canvas id="canvas" width="640" height="360" hidden></canvas>
+<script>
+const canvas = document.querySelector('canvas'), ctx = canvas.getContext('2d');
+const draw = () => { ctx.fillStyle = '#24324a'; ctx.fillRect(0,0,640,360); ctx.fillStyle = '#88dfc6'; ctx.font = '30px sans-serif'; ctx.fillText('Local Translator · Video test', 80, 180); };
+draw(); setInterval(draw, 100);
+const video = document.querySelector('video');
+video.srcObject = canvas.captureStream(10);
+const track = video.addTextTrack('subtitles', 'English', 'en'); track.mode = 'hidden';
+track.addCue(new VTTCue(0, 300, 'Hello. Welcome to this video. Today we are learning English.'));
+video.play();
+</script></html>

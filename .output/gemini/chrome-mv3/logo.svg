@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#475569" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#475569" flood-opacity="0.04" />
+    </filter>
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF" /><stop offset="100%" stop-color="#F8FAFC" /></linearGradient>
+    <linearGradient id="primaryWave" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366F1" /><stop offset="50%" stop-color="#8B5CF6" /><stop offset="100%" stop-color="#F43F5E" /></linearGradient>
+    <linearGradient id="secondaryWave" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#EC4899" /><stop offset="100%" stop-color="#3B82F6" /></linearGradient>
+  </defs>
+  <rect x="36" y="36" width="440" height="440" rx="108" fill="url(#lightBg)" stroke="#E2E8F0" stroke-width="3" filter="url(#soft-shadow)" />
+  <path d="M 256 124 C 182 124, 124 178, 124 244 C 124 278, 139 308, 164 329 L 152 376 C 150 384, 159 390, 166 385 L 218 355 C 230 361, 243 364, 256 364 C 330 364, 388 310, 388 244 C 388 178, 330 124, 256 124 Z" fill="#FFFFFF" stroke="url(#primaryWave)" stroke-width="15" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M 194 244 C 214 244, 226 215, 244 215 C 264 215, 274 273, 294 273 C 308 273, 316 244, 324 244" fill="none" stroke="url(#primaryWave)" stroke-width="6" stroke-linecap="round" opacity="0.25" />
+  <path d="M 184 244 C 208 244, 220 286, 246 286 C 270 286, 280 200, 304 200 C 318 200, 326 244, 332 244" fill="none" stroke="url(#secondaryWave)" stroke-width="8" stroke-linecap="round" opacity="0.55" />
+  <path d="M 174 244 C 204 244, 214 178, 242 178 C 268 178, 276 310, 302 310 C 320 310, 330 244, 342 244" fill="none" stroke="url(#primaryWave)" stroke-width="12" stroke-linecap="round" />
+  <circle cx="346" cy="336" r="8" fill="#10B981" /><circle cx="346" cy="336" r="14" fill="#10B981" opacity="0.2" />
+</svg>
